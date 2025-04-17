@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  //- Main Heading
+  header
+    h1= title
+    p Welcome! Kareem Abdul (24250392)
+
+  //- Library Info Section
+  section.info
+    h2 Welcome to LocalLibrary
+    p A simple yet powerful Express website that showcases the potential of building applications with Node.js and MongoDB. Feel free to explore our library's collections.
+
+  //- Dynamic content (library stats)
+  section.stats
+    h3 Dynamic Library Stats
+    p Here are some interesting numbers from our library system:
+
+    ul
+      li
+        strong Books: 
+        |  !{book_count}
+      li
+        strong Copies: 
+        |  !{book_instance_count}
+      li
+        strong Copies Available: 
+        |  !{book_instance_available_count}
+      li
+        strong Authors: 
+        |  !{author_count}
+      li
+        strong Genres: 
+        |  !{genre_count}
+
+  //- Footer Section
+  footer
+    p © 2025 Kareem Abdul. All rights reserved.
